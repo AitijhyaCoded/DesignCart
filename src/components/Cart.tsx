@@ -41,7 +41,7 @@ export default function Cart() {
             />
             <div className="flex-grow">
               <h3 className="font-semibold">{item.title}</h3>
-              <p className="text-gray-600">${item.price.toFixed(2)}</p>
+              <p className="text-gray-600">₹{item.price.toFixed(2)}</p>
               <div className="flex items-center space-x-2 mt-2">
                 <button
                   onClick={() => updateQuantity(item.id, item.quantity - 1)}
@@ -65,14 +65,14 @@ export default function Cart() {
               </div>
             </div>
             <div className="text-lg font-bold">
-              ${(item.price * item.quantity).toFixed(2)}
+              ₹{(item.price * item.quantity).toFixed(2)}
             </div>
           </div>
         ))}
       </div>
       <div className="mt-6 text-right">
         <div className="text-2xl font-bold">
-          Total: ${state.total.toFixed(2)}
+          Total: ₹{state.total.toFixed(2)}
         </div>
         <button 
           onClick={() => navigate('/checkout')}
