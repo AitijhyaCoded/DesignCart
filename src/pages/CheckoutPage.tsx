@@ -45,6 +45,24 @@ export default function CheckoutPage() {
                 className="w-full p-2 border rounded-lg focus:ring-2 ring-sky-300"
               />
             </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Contact No.
+              </label>
+              <input
+                type="number"
+                className="w-full p-2 border rounded-lg focus:ring-2 ring-sky-300"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Email Id
+              </label>
+              <input
+                type="email"
+                className="w-full p-2 border rounded-lg focus:ring-2 ring-sky-300"
+              />
+            </div>
             <div className="col-span-2">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Address
